@@ -1,11 +1,10 @@
 /*
  * Lab 3, Task 3
- * Name: <your name>
- * Student ID: <your student ID>
+ * Name: Ulvi Mammadli
+ * Student ID: 251ADB078
  *
  * Implement basic string handling functions.
  * Write your own versions of:
- *   - my_strlen (finds string length, not counting '\0')
  *   - my_strcpy (copies string from src to dest, INCLUDING the '\0')
  *
  * Rules:
@@ -48,10 +47,21 @@ int main(void) {
 
 // Implement functions below
 int my_strlen(const char *str) {
-    // TODO: count characters until '\0'
-    return 0; // placeholder
+    int length = 0;
+
+    while (str[length] != '\0'){
+        length++;
+    }
+
+    return length;
 }
 
 void my_strcpy(char *dest, const char *src) {
-    // TODO: copy characters until '\0', then write the '\0' into dest
+    while (*src != '\0'){
+        *dest = *src;
+        dest ++;
+        src++;
+    }
+
+    *dest = '\0';
 }
