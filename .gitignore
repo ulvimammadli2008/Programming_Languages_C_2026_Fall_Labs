@@ -1,4 +1,3 @@
-
 # Build artifacts
 bin/
 *.o
@@ -10,9 +9,17 @@ bin/
 .vscode/ipch
 .vscode/.browse*
 .vscode/*.db
+.vscode/settings.json
 
 # OS
 .DS_Store
 Thumbs.db
-.vscode/settings.json
+
+# Makefile backup
 Makefile copy
+
+# Generated files from Lab 5
+data.txt
+student.txt
+students.txt
+student.bin
